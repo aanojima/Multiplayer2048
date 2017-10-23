@@ -1,0 +1,17 @@
+body, #main-container {
+	text-align: center;
+}
+
+#main-container h1 {
+	font-size: 72px;
+}
+
+#new_game_form {
+	margin-bottom: 50px;
+}
+
+#home_img {
+	width:400px;
+	height:auto;
+	max-width:100%
+}

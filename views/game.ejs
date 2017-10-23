@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>2048 Co-Op</title>
+    <%- include partials/common-head.ejs %>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">2048 Co-Op: <%= game_id %></h1>
+            <div class="scores-container">
+                <div class="score-container">0</div>
+                <div class="best-container">0</div>
+            </div>
+        </div>
+        <p class="game-intro">
+            Play alongside other users and join the numbers and get to the <strong>2048 tile!</strong>
+        </p>
+        <div class="game-container">
+            <div class="game-message">
+                <p></p>
+                <div class="lower">
+                    <a class="keep-playing-button">Keep going</a>
+                    <a class="retry-button">Try again</a>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <div class="tile-container"></div>
+        </div>
+        <p class="game-explanation">
+            <strong class="important">How to play:</strong>
+            Use your <strong>arrow keys</strong>
+            to move the tiles. Anyone playing on this website can control the same game.  When two tiles with the same number touch, they <strong>merge into one! </strong>
+        </p>
+        <p class="game-explanation">Have Fun!  -Noj</p>
+        <hr>
+    </div>
+    <script src="/javascripts/animframe_polyfill.js"></script>
+    <script src="/javascripts/keyboard_input_manager.js"></script>
+    <script src="/javascripts/html_actuator.js"></script>
+    <script src="/javascripts/grid.js"></script>
+    <script src="/javascripts/tile.js"></script>
+    <script src="/javascripts/local_score_manager.js"></script>
+    <script src="/javascripts/game_manager.js"></script>
+    <script src="/javascripts/application.js"></script>
+</body>
